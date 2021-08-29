@@ -3,3 +3,73 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+section {
+    margin-bottom: 15px;
+}
+
+.box {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 50px;
+    background-color: blue;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    padding: 15px;
+}
+
+.nested {
+    background-color: limegreen;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid blue;
+    min-height: 30px;
+}
+
+#column_numbers .nested {
+    min-height: 60px;
+}
+
+
+/* Sezione Alignment */
+
+#alignment #center {
+    justify-content: center;
+}
+
+#alignment #end {
+    justify-content: flex-end;
+}
+
+
+/* Raddoppio altezza per i box */
+
+.h-2x {
+    min-height: 100px;
+}
+
+#alignment #vert-mid {
+    align-self: center;
+}
+
+#alignment #vert-bottom {
+    align-self: flex-end;
+}
+
+
+/* Sezione Justify */
+
+#justify #space-around {
+    justify-content: space-around;
+}
+
+#justify #space-between {
+    justify-content: space-between;
+}
